@@ -1,4 +1,6 @@
-PROMPT === Baseline Oracle privileges ===
+PROMPT === Baseline Oracle privileges, run as SYS ===
+
+CONNECT sys@pdb1 AS SYSDBA
 
 SELECT grantee, privilege
 FROM dba_sys_privs

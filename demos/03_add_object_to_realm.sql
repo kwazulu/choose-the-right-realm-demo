@@ -2,7 +2,7 @@ PROMPT ============================================================
 PROMPT DEMO 3: Add the table to the Regular Realm
 PROMPT ============================================================
 
-CONNECT C##DVOWNER/Oracle123
+CONNECT dbv_owner_pdb1/Oracle123@pdb1
 
 BEGIN
     DBMS_MACADM.ADD_OBJECT_TO_REALM(
@@ -14,7 +14,7 @@ BEGIN
 END;
 /
 
-CONNECT / AS SYSDBA
+CONNECT sys@pdb1 AS SYSDBA
 
 SELECT realm_name, object_owner, object_name, object_type
 FROM dvsys.dba_dv_realm_object

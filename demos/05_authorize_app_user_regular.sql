@@ -2,7 +2,7 @@ PROMPT ============================================================
 PROMPT DEMO 5: Add APP_USER as a Regular Realm participant
 PROMPT ============================================================
 
-CONNECT C##DVOWNER/Oracle123
+CONNECT dbv_owner_db1/Oracle123@pdb1
 
 BEGIN
     DBMS_MACADM.ADD_AUTH_TO_REALM(
@@ -14,7 +14,7 @@ BEGIN
 END;
 /
 
-CONNECT / AS SYSDBA
+CONNECT sys@pdb1 AS SYSDBA
 
 SELECT realm_name, grantee, auth_options, rule_set_name
 FROM dvsys.dba_dv_realm_auth

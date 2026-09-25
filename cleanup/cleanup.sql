@@ -2,14 +2,14 @@ PROMPT ============================================================
 PROMPT Cleanup
 PROMPT ============================================================
 
-CONNECT C##DVOWNER/Oracle123
+CONNECT dbv_owner_pdb1/Oracle123@pdb1
 
 BEGIN
     DBMS_MACADM.DELETE_REALM_CASCADE('Sensitive Data Realm');
 END;
 /
 
-CONNECT / AS SYSDBA
+CONNECT sys@pdb1 AS SYSDBA
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP USER app_user CASCADE';

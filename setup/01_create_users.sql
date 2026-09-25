@@ -1,11 +1,11 @@
--- Run as a privileged administrator in the demo PDB.
+-- Run as a a user with DV_ACCTMGR role in the PDB.
 
 SET DEFINE OFF
 
 PROMPT Creating demo users...
 
 BEGIN
-    EXECUTE IMMEDIATE 'CREATE USER app_owner IDENTIFIED BY "Oracle123"';
+    EXECUTE IMMEDIATE 'CREATE USER app_owner IDENTIFIED BY "Oracle123" DEFAULT TABLESPACE users TEMPORARY TABLESPACE temp QUOTA UNLIMITED ON users';
 EXCEPTION
     WHEN OTHERS THEN
         IF SQLCODE != -01920 THEN RAISE; END IF;
@@ -28,6 +28,10 @@ EXCEPTION
 END;
 /
 
-GRANT CREATE SESSION, CREATE TABLE TO app_owner;
+GRANT CREATE SESSION TO app_owner;
 GRANT CREATE SESSION TO app_user;
 GRANT CREATE SESSION TO powerful_user;
+
+connect sys@pdb1 as sysdba
+
+GRANT CREATE TABLE to app_owner;

@@ -1,4 +1,6 @@
-PROMPT === Final Database Vault realm definition ===
+PROMPT === Final Database Vault realm definition, run as dv_owner ===
+
+CONNECT dbv_owner_pdb1/Oracle123@pdb1
 
 SELECT name,
        description,

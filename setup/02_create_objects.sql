@@ -1,6 +1,6 @@
 PROMPT Creating demo table and data...
 
-CONNECT app_owner/Oracle123
+CONNECT app_owner/Oracle123@pdb1
 
 CREATE TABLE sensitive_data (
     id       NUMBER PRIMARY KEY,
@@ -12,4 +12,4 @@ INSERT INTO sensitive_data VALUES (1, 'Customer A', 'Sensitive Data A');
 INSERT INTO sensitive_data VALUES (2, 'Customer B', 'Sensitive Data B');
 COMMIT;
 
-CONNECT / AS SYSDBA
+CONNECT sys@pdb1 AS SYSDBA

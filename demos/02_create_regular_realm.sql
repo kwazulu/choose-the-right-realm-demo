@@ -5,7 +5,7 @@ PROMPT ============================================================
 -- Run as the designated Database Vault administrator.
 -- Adjust the CONNECT statement for the local DV owner in your lab.
 
-CONNECT C##DVOWNER/Oracle123
+CONNECT dbv_owner_pdb1/Oracle123@pdb1
 
 BEGIN
     DBMS_MACADM.CREATE_REALM(
@@ -18,7 +18,7 @@ BEGIN
 END;
 /
 
-CONNECT / AS SYSDBA
+CONNECT sys@pdb1 AS SYSDBA
 
 SELECT name, description, enabled, audit_options, realm_type
 FROM dvsys.dba_dv_realm

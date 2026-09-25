@@ -5,7 +5,7 @@ PROMPT ============================================================
 -- First remove APP_USER from the realm, then add it back.
 -- This makes the before/after behavior visually obvious in a recording.
 
-CONNECT C##DVOWNER/Oracle123
+CONNECT dbv_owner_pdb1/Oracle123@pdb1
 
 BEGIN
     DBMS_MACADM.DELETE_AUTH_FROM_REALM(
@@ -25,4 +25,4 @@ BEGIN
 END;
 /
 
-CONNECT / AS SYSDBA
+CONNECT sys@pdb1 AS SYSDBA
