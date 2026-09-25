@@ -62,7 +62,7 @@ verification/02_final_dv_checks.sql
 cleanup/cleanup.sql
 ```
 
-The scripts intentionally separate administration from verification so the recording can pause between each conceptual step.
+The scripts intentionally separate administration from verification.
 
 ## Notes on the API
 
