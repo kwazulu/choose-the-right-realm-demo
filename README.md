@@ -51,11 +51,10 @@ demos/01_baseline.sql
 demos/02_create_regular_realm.sql
 demos/03_add_object_to_realm.sql
 demos/04_test_regular_realm.sql
-demos/05_authorize_app_user_regular.sql
-demos/06_change_to_mandatory.sql
-demos/07_test_mandatory_realm.sql
-demos/08_authorize_app_user_mandatory.sql
-demos/09_test_mandatory_with_authorization.sql
+demos/05_change_to_mandatory.sql
+demos/06_test_mandatory_realm.sql
+demos/07_authorize_app_user_mandatory.sql
+demos/08_test_mandatory_with_authorization.sql
 
 verification/02_final_dv_checks.sql
 
