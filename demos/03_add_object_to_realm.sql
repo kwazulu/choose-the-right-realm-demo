@@ -14,8 +14,7 @@ BEGIN
 END;
 /
 
-CONNECT sys@pdb1 AS SYSDBA
 
-SELECT realm_name, object_owner, object_name, object_type
+SELECT realm_name, owner, object_name, object_type
 FROM dvsys.dba_dv_realm_object
 WHERE realm_name = 'Sensitive Data Realm';

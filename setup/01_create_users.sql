@@ -1,5 +1,7 @@
 -- Run as a a user with DV_ACCTMGR role in the PDB.
 
+connect dbv_acctmgr_pdb1/Oracle123@pdb1
+
 SET DEFINE OFF
 
 PROMPT Creating demo users...

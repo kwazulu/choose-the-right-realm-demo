@@ -18,8 +18,6 @@ BEGIN
 END;
 /
 
-CONNECT sys@pdb1 AS SYSDBA
-
 SELECT name, description, enabled, audit_options, realm_type
 FROM dvsys.dba_dv_realm
 WHERE name = 'Sensitive Data Realm';
