@@ -6,7 +6,7 @@ PROMPT APP_OWNER: should fail without Mandatory Realm authorization
 CONNECT app_owner/Oracle123@pdb1
 SELECT * FROM app_owner.sensitive_data ORDER BY id;
 
-PROMPT APP_USER: should currently succeed because it was authorized before the Realm was made Mandatory
+PROMPT APP_USER: should fail without Mandatory Realm authorization
 PROMPT NOTE: This verifies that realm authorization is the additional gate.
 CONNECT app_user/Oracle123@pdb1
 SELECT * FROM app_owner.sensitive_data ORDER BY id;

@@ -8,14 +8,6 @@ PROMPT ============================================================
 CONNECT dbv_owner_pdb1/Oracle123@pdb1
 
 BEGIN
-    DBMS_MACADM.DELETE_AUTH_FROM_REALM(
-        realm_name => 'Sensitive Data Realm',
-        grantee    => 'APP_USER'
-    );
-END;
-/
-
-BEGIN
     DBMS_MACADM.ADD_AUTH_TO_REALM(
         realm_name    => 'Sensitive Data Realm',
         grantee       => 'APP_USER',

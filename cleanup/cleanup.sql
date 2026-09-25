@@ -9,7 +9,7 @@ BEGIN
 END;
 /
 
-CONNECT dv_acctmgr_pdb1@pdb1
+CONNECT dbv_acctmgr_pdb1/Oracle123@pdb1
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP USER app_user CASCADE';

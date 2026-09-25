@@ -13,7 +13,7 @@ WHERE name = 'Sensitive Data Realm';
 PROMPT === Protected object ===
 
 SELECT realm_name,
-       object_owner,
+       owner,
        object_name,
        object_type
 FROM dvsys.dba_dv_realm_object
@@ -24,6 +24,6 @@ PROMPT === Realm authorizations ===
 SELECT realm_name,
        grantee,
        auth_options,
-       rule_set_name
+       auth_rule_set_name
 FROM dvsys.dba_dv_realm_auth
 WHERE realm_name = 'Sensitive Data Realm';
