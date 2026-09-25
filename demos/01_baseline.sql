@@ -14,4 +14,3 @@ PROMPT POWERFUL_USER: SELECT ANY TABLE
 CONNECT powerful_user/Oracle123@pdb1
 SELECT * FROM app_owner.sensitive_data ORDER BY id;
 
-CONNECT sys@pdb1 AS SYSDBA

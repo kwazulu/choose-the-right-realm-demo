@@ -14,4 +14,4 @@ PROMPT POWERFUL_USER: should fail because SELECT ANY TABLE cannot cross the Real
 CONNECT powerful_user/Oracle123@pdb1
 SELECT * FROM app_owner.sensitive_data ORDER BY id;
 
-CONNECT sys@pdb1 AS SYSDBA
+

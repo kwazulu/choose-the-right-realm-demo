@@ -16,5 +16,3 @@ BEGIN
     );
 END;
 /
-
-CONNECT sys@pdb1 AS SYSDBA
