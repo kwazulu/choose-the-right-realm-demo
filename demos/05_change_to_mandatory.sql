@@ -5,7 +5,7 @@ PROMPT ============================================================
 -- Preserve the existing description, enabled state, and audit setting.
 -- Only realm_type changes here.
 
-CONNECT dbv_owner_pdb1/Oracle123@pdb1
+CONNECT dbv_owner_pdb1/ChangeMe234@pdb1
 
 BEGIN
     DBMS_MACADM.UPDATE_REALM(

@@ -5,7 +5,7 @@ PROMPT ============================================================
 -- First remove APP_USER from the realm, then add it back.
 -- This makes the before/after behavior visually obvious in a recording.
 
-CONNECT dbv_owner_pdb1/Oracle123@pdb1
+CONNECT dbv_owner_pdb1/ChangeMe234@pdb1
 
 BEGIN
     DBMS_MACADM.ADD_AUTH_TO_REALM(

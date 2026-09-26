@@ -2,7 +2,7 @@ PROMPT ============================================================
 PROMPT DEMO 3: Add the table to the Regular Realm
 PROMPT ============================================================
 
-CONNECT dbv_owner_pdb1/Oracle123@pdb1
+CONNECT dbv_owner_pdb1/ChangeMe234@pdb1
 
 BEGIN
     DBMS_MACADM.ADD_OBJECT_TO_REALM(

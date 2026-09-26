@@ -1,6 +1,6 @@
 PROMPT Creating demo table and data...
 
-CONNECT app_owner/Oracle123@pdb1
+CONNECT app_owner/ChangeMe234@pdb1
 
 CREATE TABLE sensitive_data (
     id       NUMBER PRIMARY KEY,

@@ -5,7 +5,7 @@ PROMPT ============================================================
 -- Run as the designated Database Vault administrator.
 -- Adjust the CONNECT statement for the local DV owner in your lab.
 
-CONNECT dbv_owner_pdb1/Oracle123@pdb1
+CONNECT dbv_owner_pdb1/ChangeMe234@pdb1
 
 BEGIN
     DBMS_MACADM.CREATE_REALM(
